@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaaaaa" >
+
+    <com.example.clipphoto.classphoto.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.example.clipphoto.classphoto.ClipImageLayout>
+
+    <Button
+        
+        android:id="@+id/bt_photo_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="取消"
+         android:textSize="15sp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/bt_photo_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:textSize="15sp"
+        android:text="选取"
+        android:textColor="#fff" />
+
+</RelativeLayout>

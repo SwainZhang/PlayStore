@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_appinfo_bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- 使用了一个自定义的view 来控制图片在屏幕上的宽高-->
+        <views.RatioLayout
+            xmlns:myAttrs="http://schemas.android.com/apk/res-auto"
+            myAttrs:picRatio="2.43"
+            myAttrs:relative="height"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/item_subject_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </views.RatioLayout>
+
+           <!-- <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/item_subject_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+
+
+
+        <TextView
+            android:id="@+id/item_subject_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="title"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

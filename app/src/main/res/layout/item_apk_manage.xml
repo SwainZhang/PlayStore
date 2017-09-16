@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv_apk_icon_manager"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_about"
+            />
+
+        <TextView
+            android:id="@+id/tv_apk_name_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="热血拳皇"
+            android:textColor="#000"
+            android:textSize="19sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_apk_modify_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SRC"
+            android:textColor="@color/darker_gray"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_apk_size_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="17Mb"
+            android:textColor="@color/darker_gray"
+            android:textSize="15dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_delete_manager"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+</LinearLayout>
